@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project Zomboid Color Guide</title>
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<script src='pzcp.js'></script>
+	</head>
+	<body>
+		<div class='window' id="pzcpw">
+			<div class='wintitle'>
+				<a href='../'><img src='closebtn.png' style='margin-bottom: -1px'></a> Project Zomboid Terrain & Vegetation Picker
+			</div>
+			<div class='wincontent pzcolorpicker'>
+				<div class='label'>
+					Select a terrain to view information. Click a property to copy it to the clipboard.
+				</div>
+				<div class='pickerui'>
+					<div class='scrolly'>
+						<div class='terrainlist'>
+							<!-- <div class='terrainbtn active'><div class='preview'><img></div><div class='label'>Loading...</div></div> -->
+							<div class='notice'>
+								Loading, please wait...<noscript><br>JavaScript is required to use this!</noscript>
+							</div>
+						</div>
+					</div>
+					<div class='terraininfo'>
+						<div class='header' id='tilename'>No Tile</div>
+						<div class='preview'>
+							<img id="tileimg" src="notile.png">
+						</div>
+						<div class='properties'>
+							<div><div>Type</div><div id='tiletype'>&nbsp;</div></div>
+							<div><div>Color (Hex)</div><div id='tilecolor'>&nbsp;</div></div>
+							<div><div>Color (RGB)</div><div id='tilecolorrgb'>&nbsp;</div></div>
+							<div><div>Red</div><div id="tilered">&nbsp;</div></div>
+							<div><div>Green</div><div id="tilegreen">&nbsp;</div></div>
+							<div><div>Blue</div><div id="tileblue">&nbsp;</div></div>
+							<div><div>Game Build</div><div id='tilebuild'>&nbsp;</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
